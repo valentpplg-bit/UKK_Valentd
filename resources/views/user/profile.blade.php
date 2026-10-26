@@ -1,0 +1,6 @@
+@extends('layouts.user')
+@section('title', 'Profil Saya - Perpustakaan Sekolah')
+@section('content')
+<div class="page-heading mb-4"><h1>Profil Saya</h1><p class="mb-0">Informasi akun dan data anggota perpustakaan.</p></div>
+<div class="panel p-4"><div class="d-flex align-items-center gap-3 mb-4"><span class="avatar" style="width:54px;height:54px;font-size:1.3rem">{{ strtoupper(substr($user->name, 0, 1)) }}</span><div><h2 class="h5 mb-1" style="color:var(--navy)">{{ $user->name }}</h2><span class="badge badge-available">Akun {{ ucfirst($user->status) }}</span></div></div><div class="row g-3"><div class="col-md-6"><small class="text-muted d-block">Nama lengkap</small>{{ $anggota?->nama_lengkap ?? $user->name }}</div><div class="col-md-6"><small class="text-muted d-block">Email</small>{{ $user->email }}</div><div class="col-md-6"><small class="text-muted d-block">NIS</small>{{ $anggota?->nis ?? '-' }}</div><div class="col-md-6"><small class="text-muted d-block">Kelas</small>{{ $anggota?->kelas ?? '-' }}</div><div class="col-12"><small class="text-muted d-block">Alamat</small>{{ $anggota?->alamat ?? '-' }}</div></div><a href="{{ route('user.profile.edit') }}" class="btn btn-gold mt-4"><i class="bi bi-pencil me-1"></i>Edit Profil</a></div>
+@endsection
