@@ -38,6 +38,15 @@
 
 🔗 https://github.com/valentpplg-bit/UKK_Valentd
 
+
+**Link Web:**
+🔗 https://yoyokperpus@gmail.com
+
+**Link ERD:**
+🔗 [https://github.com/valentpplg-bit/UKK_Valentd](https://drive.google.com/drive/folders/1iF6bcJBpYp_ccvoHVuhplVSwbLeYhSUU?usp=sharing
+
+
+
 ---
 
 ## 📖 2. Deskripsi Project
